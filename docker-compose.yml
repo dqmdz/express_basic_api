@@ -1,0 +1,8 @@
+services:
+  express_app:
+    build: 
+      context: https://github.com/dqmdz/express_basic_api.git
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    restart: always
